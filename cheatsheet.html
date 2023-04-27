@@ -1,163 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"
-    />
-    <title>Cheatsheet</title>
-    <style>
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: navy;
-        color: white;
-        text-align: center;
-      }
 
-      .header {
-        text-align: center;
-        padding: 30px 10px;
-      }
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
+ <title> Cheatsheet</title>
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+  }
 
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        border: 1px solid #e7e7e7;
-        background-color: #f3f3f3;
-      }
 
-      li {
-        float: left;
-      }
 
-      li a {
-        display: block;
-        color: #666;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        width: 100%;
-      }
 
-      .tabs {
-        display: flex;
-        flex-wrap: wrap;
-      }
+  .header {
+    text-align: center;
+    padding: 30px 10px;
 
-      .tabs input[type="radio"] {
-        display: none;
-      }
 
-      .tabs label {
-        padding: 25px;
-        background: grey;
-        font-weight: bold;
-      }
 
-      .tabs .tab {
-        width: 100%;
-        padding: 20px;
-        order: 1;
-        display: none;
-      }
+  }
 
-      .tabs .tab1 {
-        background: black;
-      }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 
-      .tabs .tab h2 {
-        font-size: 3em;
-      }
 
-      .tabs input[type="radio"]:checked + label + .tab {
-        display: block;
-      }
+  }
 
-      .tabs input[type="radio"]:checked + label {
-        background: white;
-      }
-    </style>
-  </head>
+  li {
+    float: left;
 
-  <body>
-    <div class="topheader">
-      <div class="header"></div>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="cheatsheet.html">Cheatsheet</a></li>
-        <li><a href="Mess.html">Mess</a></li>
-      </ul>
+  }
+
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+
+  }
+
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tabs input[type="radio"] {
+    display: none;
+  }
+
+  .tabs label {
+    padding: 25px;
+    background: grey;
+    font-weight: bold;
+  }
+
+
+  .tabs .tab {
+    width: 100%;
+    padding: 20px;
+    order: 1;
+    display: none;
+  }
+
+
+
+  .tabs .tab1 {
+    background: black;
+  }
+
+
+  .tabs .tab h2 {
+    font-size: 3em;
+  }
+
+  .tabs input[type='radio']:checked+label+.tab {
+    display: block;
+  }
+
+  .tabs input[type="radio"]:checked+label {
+    background: white;
+  }
+
+
+  
+</style>
+</head>
+
+<body>
+  <div class="topheader">
+    <div class=" header">
     </div>
+    
+  
 
-    <div class="tabs">
-      <input type="radio" id="tabcss" name="tabs" checked="checked" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="cheatsheet.html">Cheatsheet</a></li>
+      <li><a href="Mess.html">Mess</a></li>
+
+    </ul>
+  </div>
+
+    <div class="tabs"> 
+      <input type="radio" id="tabcss" name="tabs" checked="checked">
       <label for="tabcss">CSS</label>
       <div class="tab">
-        <div class="tab2">
+      <div class="tab2">
           <h2>CSS</h2>
           <table class="table">
             <tr>
-              <th># calls an id</th>
-              <th>. calls a class</th>
-              <th>(CSS) Style</th>
+              <th> # calls an id </th>
+              <th> . calls a class</th>
+              <th> (CSS) Style</th>
             </tr>
             <tr>
-              <td>Dont put inline CSS</td>
-              <td>CSS makes things look nice</td>
-              <td>Can make CSS seperate from html code</td>
+              <td> Dont put inline CSS</td>
+              <td> CSS makes things look nice </td>
+              <td> Can make CSS seperate from html code</td>
             </tr>
             <tr>
-              <td>Id has highest priority</td>
-              <td>Always unique IDS</td>
-              <td>CSS (Cascading Style Sheets)</td>
+              <td> Id has highest priority </td>
+              <td> Always unique IDS</td>
+              <td> CSS (Cascading Style Sheets) </td>
             </tr>
           </table>
+
         </div>
       </div>
 
-      <input type="radio" id="tabhtml" name="tabs" />
+      <input type="radio" id="tabhtml" name="tabs">
       <label for="tabhtml">HTML</label>
       <div class="tab">
         <div class="tab2">
           <h2>HTML</h2>
           <table class="table">
             <tr>
-              <th>(link) a href="#"># /a</th>
-              <th>class="#"</th>
-              <th>!DOCTYPE assigns document type</th>
+              <th> (link) a href="#"># /a </th>
+              <th> class="#"</th>
+              <th> !DOCTYPE assigns document type</th>
             </tr>
             <tr>
-              <td>put main code in body tag (what is displayed)</td>
-              <td>Head tag is for us as programmers not for user to see</td>
+              <td> put main code in body tag (what is displayed)</td>
+              <td> Head tag is for us as programmers not for user to see </td>
               <td>P is paragraph</td>
             </tr>
             <tr>
-              <td>Tag is building blocks and anything after <</td>
-              <td>
-                Atribute is anything after tag while within it
-                "pineapple...attribute"
-              </td>
-              <td>TAG ATTRIBUTE VALUE TEXT</td>
+              <td>Tag is building blocks and anything after < </td>
+              <td> Atribute is anything after tag while within it "pineapple...attribute" </td>
+              <td> TAG ATTRIBUTE VALUE TEXT</td>
             </tr>
           </table>
         </div>
       </div>
 
-      <input type="radio" id="tabcl" name="tabs" />
+      <input type="radio" id="tabcl" name="tabs">
       <label for="tabcl">Command Line</label>
       <div class="tab">
         <div class="tab1">
           <h2>Command Line</h2>
           <table class="table">
             <tr>
-              <th>Delete</th>
+              <th>Delete </th>
               <th>Create</th>
               <th>Open</th>
             </tr>
@@ -175,7 +194,7 @@
         </div>
       </div>
 
-      <input type="radio" id="tabbatch" name="tabs" />
+      <input type="radio" id="tabbatch" name="tabs">
       <label for="tabbatch">Batch Files</label>
       <div class="tab">
         <div class="tab2">
@@ -189,53 +208,59 @@
             <tr>
               <td>%input% with correct name will act as what user inputed</td>
               <td>GEQ means greater than</td>
-              <td>
-                if statements make sure to use () around what you want to say
-                aswell as echo (echo"...")
-              </td>
+              <td> if statements make sure to use () around what you want to say aswell as echo (echo"...")</td>
             </tr>
             <tr>
-              <td>bat is ran through cli</td>
-              <td>pause will pause the process</td>
-              <td>
-                Batch files will process in a instant unless prompted not to.
-              </td>
+              <td> bat is ran through cli</td>
+              <td> pause will pause the process</td>
+              <td>Batch files will process in a instant unless prompted not to.</td>
             </tr>
+            </table>
+          </div>
+      </div>
+
+            <input type="radio" id="tabgit" name="tabs">
+            <label for="tabgit">Git</label>
+            <div class="tab">
+              <div class="tab2">
+                <h2>Git</h2>
+                <table class="table">
+                  <tr>
+                    <th>git push puts things into a linked repository</th>
+                    <th>Git pull pulls things from a linked repository if changes has been made</th>
+                    <th>Git used in CMD</th>
+                  </tr>
+                  <tr>
+                    <td>git add . adds new files</td>
+                    <td>git commit -m "" commits any changed or updated files</td>
+                    <td>git init -b main creates new repository</td>
+                  </tr>
+                  <tr>
+                    <td>git remote add origin sets new remote</td>
+                    <td> git remote -v verifies</td>
+                    <td> git is the main thing used</td>
+                  </tr>
           </table>
         </div>
       </div>
-    </div>
 
-    <input type="radio" id="tabgit" name="tabs" />
-    <label for="tabgit">Git</label>
-    <div class="tab">
-      <div class="tab2">
-        <h2>Git</h2>
-        <table class="table">
-          <tr>
-            <th>git push puts things into a linked repository</th>
-            <th>
-              Git pull pulls things from a linked repository if changes has been
-              made
-            </th>
-            <th>Git used in CMD</th>
-          </tr>
-          <tr>
-            <td>git add . adds new files</td>
-            <td>git commit -m "" commits any changed or updated files</td>
-            <td>git init -b main creates new repository</td>
-          </tr>
-          <tr>
-            <td>git remote add origin sets new remote</td>
-            <td>git remote -v verifies</td>
-            <td>git is the main thing used</td>
-          </tr>
-        </table>
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="footer">
+
+        <p>"BJSS Academy is the best thing since sliced bread" - Dan Webb</p>
       </div>
-    </div>
+      
+</body>
 
-    <div class="footer">
-      <p>"BJSS Academy is the best thing since sliced bread" - Dan Webb</p>
-    </div>
-  </body>
 </html>
