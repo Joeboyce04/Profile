@@ -14,14 +14,14 @@
         color: white;
         text-align: center;
         
-     height: 100px;
+     height: 50px;
      background-color: blue;
      animation-name: foot;
     animation-duration: 5s;
     animation-iteration-count: 20;
     }
 
-        @keyframes foot {
+        @keyframes foot {  /*@Key framesmeans the animation will gradualy change from one style to another*/
   from {background-color: blue;}
   to {background-color: yellow;}
     }
@@ -140,6 +140,7 @@
       <div class="tab2">
           <h2>CSS</h2>
           <table class="table">
+
             <tr>
               <th> # calls an id </th>
               <th> . calls a class</th>
@@ -260,6 +261,43 @@
         </div>
       </div>
 
+      <input type="radio" id="tabgo" name="tabs">
+            <label for="tabgo">GO</label>
+            <div class="tab">
+              <div class="tab2">
+                <h2>GO</h2>
+                <table class="table">
+                  <tr>
+                    <th>Var glue string [sets glue variable as a string]</th>
+                    <th>glue:= can also be used works as a short way to assign</th>
+                    <th>If/Else statements is code that will run if a certain conidtion is met such as true/false</th>
+                  </tr>
+                  <tr>
+                    <td>if name == "joe"
+                       print ("Thats my name")
+                     Else 
+                     print ("Thats not my name")
+
+                    </td>
+                    <td>A for loop is where code is repeated x ammount of times automtically until certain criteria is met. e.g finish loop</td>
+                    <td>this loop will print numbers up to 5
+                      for i:= 1; i==5; i++
+                      print i
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Function is code that is designed to perform a specific task. [putting code in different groups]
+                      a paramater is a value that a function can use to carry out specific code
+                      return type is the type of whatver the function returns. For an example if the function returns a number then the return type would be an interger.
+                    </td>
+                    <td>go mod init is used to creare a go module  [go.mod] allows you to use other GO commands </td>
+                    <td> To run go can use go run . 
+                        can also use go run filename
+                    </div></td>
+                  </tr>
+          </table>
+        </div>
+      </div>
 
 
 
@@ -271,6 +309,7 @@
 
 
 
+   
       
       <div class="footer">
 
