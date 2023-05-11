@@ -44,6 +44,7 @@
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
+    
 
 
   }
@@ -64,6 +65,9 @@
 
   }
 
+  table,th,td{
+    border: 2px solid; /* sets a solid line border */
+  }
 
   .tabs {
     display: flex;
@@ -101,6 +105,7 @@
 
   .tabs input[type='radio']:checked+label+.tab {
     display: block;
+    
 
   }
 
@@ -108,6 +113,19 @@
     background: white;
     
   }
+
+  .txtcolour {
+    animation-name: txt;
+    animation-duration: 5s;
+    animation-iteration-count: 20;
+  }
+
+  @keyframes txt {
+    from {color: blue;}
+  to {color: yellow;}
+  }
+
+  
 
 
   
@@ -141,23 +159,45 @@
           <h2>CSS</h2>
           <table class="table">
 
-            <tr>
-              <th> # calls an id </th>
-              <th> . calls a class</th>
-              <th> (CSS) Style</th>
-            </tr>
-            <tr>
-              <td> Dont put inline CSS</td>
-              <td> CSS makes things look nice </td>
-              <td> Can make CSS seperate from html code</td>
-            </tr>
-            <tr>
-              <td> Id has highest priority </td>
-              <td> Always unique IDS</td>
-              <td> CSS (Cascading Style Sheets) </td>
-            </tr>
-          </table>
-
+            <table>
+              <thead>
+              <tr>
+                <th>CSS Features</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>CSS Styling</th>
+                <td> CSS styling is where you put css under the <strong>"Style"</strong> tag which is under the <strong>"Head"</strong> tag.
+                This allows you to apply styles to your html code to make it look pretty
+              <image src="images/examplecss.PNG" alt="cssstyle"></image></td>
+              </tr>
+              <tr>
+                <th>Selectors </th>
+                <td> In CSS there are selcetors. Selcoters such as <strong> Class </strong>and<strong> Id</strong>
+                These allow you to apply seperate styes to code without affecting the whole thing. <strong>Id</strong>
+                has the highest priotity as a selector therfore its style can overwrite any other style uding a different selector.
+              <img src="images/cssselector.PNG" alt="cssselector">
+              </td>
+              </tr>
+              <tr>
+                <th> Seperate CSS style</th>
+                <td> You can implement <strong>CSS</strong> styilg such as <a href="https://watercss.kognise.dev/">water css</a>
+                  which applys a style to your program which makes it more appealing when loaded into a browser.
+                 </td>
+              </tr>
+              <tr>
+                <th> Inline CSS</th>
+                <td> Inline CSS is when <strong>css</strong> is <strong>Outside</strong> the style tag.
+                <strong>DO NOT DO THIS!</strong> Dan will be unhappy.</td>
+              </tr>
+              <tr>
+                <th>Animations</th>
+                <td> CSS code can be used to apply animations to text so it can change <textcolour><div class="txtcolour"> colours </textcolour></td>
+              </tr>
+            </tbody>
+            </table>
         </div>
       </div>
 
@@ -167,47 +207,93 @@
         <div class="tab2">
           <h2>HTML</h2>
           <table class="table">
-            <tr>
-              <th> (link) a href="#"># /a </th>
-              <th> class="#"</th>
-              <th> !DOCTYPE assigns document type</th>
-            </tr>
-            <tr>
-              <td> put main code in body tag (what is displayed)</td>
-              <td> Head tag is for us as programmers not for user to see </td>
-              <td>P is paragraph</td>
-            </tr>
-            <tr>
-              <td>Tag is building blocks and anything after < </td>
-              <td> Atribute is anything after tag while within it "pineapple...attribute" </td>
-              <td> TAG ATTRIBUTE VALUE TEXT</td>
-            </tr>
-          </table>
+            <table>
+              <thead>
+              <tr>
+                <th>HTML Features</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Tags</th>
+                <td>Tags are the building blocks of <strong>HTML</strong> they have to be opened and closed 
+                using &lt; &gt;. Anyting from the start of the tag to the end of the end tag is an element
+              <img src="images/pineapple.PNG" alt="pineapple"> </td>
+              </tr>
+              <tr>
+                <th>Links</th>
+                <td>Links In HTML can be used to redirect who clicks it to somehwere else. This can be done by 
+                  providing a <strong>URL</strong> aswell as the correct code.
+                  <img src="images/hreflink.PNG" alt="htmllink">
+                </td>
+              </tr>
+              <tr>
+                <th> Attributes & Values</th>
+                <td> <strong>Attributes</strong> is code that goes inside the tag which can be used in a few ways. For an example,
+                  it can be used to declare a class attribute. And <strong> Values</strong> are anything that goes inside speech marks.
+                  <img src="images/classcss.PNG" alt="classincss">
+                </td>
+              </tr>
+              </tr>
+            </tbody>
+            </table>
         </div>
       </div>
-
       <input type="radio" id="tabcl" name="tabs">
       <label for="tabcl">Command Line</label>
       <div class="tab">
         <div class="tab1">
           <h2>Command Line</h2>
           <table class="table">
-            <tr>
-              <th>Delete </th>
-              <th>Create</th>
-              <th>Open</th>
-            </tr>
-            <tr>
-              <td>del filename</td>
-              <td>md foldername</td>
-              <td>Code filename (VS)</td>
-            </tr>
-            <tr>
-              <td>rd foldername</td>
-              <td>echo.>filename</td>
-              <td>notepad filename (notepad)</td>
-            </tr>
-          </table>
+            <table>
+              <thead>
+              <tr>
+                <th>Command Line Features</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Make a Directory</th>
+                <td>md foldername</td>
+              </tr>
+              <tr>
+                <th>Remove a Directory</th>
+                <td>rd foldername</td>
+              </tr>
+              <tr>
+                <th>Make a File</th>
+                <td>echo (anything put here goes into the file)> filename</td>
+              </tr>
+              <tr>
+                <th>Delete a File</th>
+                <td>del filename</td>
+              </tr>
+              <tr>
+                <th>Opening a file</th>
+                <td>notepad filename (notepad)
+                  <br>
+                    code filename (vs)
+                </td>
+              </tr>
+              <tr>
+                <th>Listing Folders and Files</th>
+                <td>dir (directory)</td>
+              </tr>
+              <tr>
+                <th>Copying files to folder</th>
+                <td>copy filename foldername</td>
+              </tr>
+              <tr>
+                <th> Navigate directory</th>
+                <td>cd foldername (nav to specific folder)
+                  <br>
+                  cd.. (go back a directory)
+                </td>
+              </tr>
+            </tbody>
+            </table>
         </div>
       </div>
 
@@ -217,22 +303,48 @@
         <div class="tab2">
           <h2>Batch Files</h2>
           <table class="table">
-            <tr>
-              <th>@echo off stops eveything being shown</th>
-              <th>DONT! open random batch files</th>
-              <th>/p will opt for a display</th>
-            </tr>
-            <tr>
-              <td>%input% with correct name will act as what user inputed</td>
-              <td>GEQ means greater than</td>
-              <td> if statements make sure to use () around what you want to say aswell as echo (echo"...")</td>
-            </tr>
-            <tr>
-              <td> bat is ran through cli</td>
-              <td> pause will pause the process</td>
-              <td>Batch files will process in a instant unless prompted not to.</td>
-            </tr>
+            <table>
+              <thead>
+              <tr>
+                <th>Batch Features</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>@echo </th>
+                <td>@Echo off stops code being diplayed as text to the user</td>
+              </tr>
+              <tr>
+                <th>Operators</th>
+                <td> EQU (equal to)
+                  <br>
+                  NEQ (not equal to)
+                  <br>
+                  LSS (less than)
+                  <br>
+                  LEQ (less than or equal to)
+                  <br>
+                  GTR (greater than)
+                  <br>
+                  GEQ (greater than or equal to)
+                </td>
+              </tr>
+              <tr>
+                <th>Asking user for input</th>
+                <td>This can be done by declaring a variable a name and inputing valid text.
+                  <img src="images/batchfileinput.PNG" alt="batchfileinput">
+                </td>
+              </tr>
+              <tr>
+                <th>Calling a users input</th>
+                <td> This can be done by typing out the variable name surrounded by %
+                  <img src="images/batchvar.PNG" alt="Batch variable call">
+                </td>
+              </tr>
+            </tbody>
             </table>
+
           </div>
       </div>
 
@@ -242,22 +354,37 @@
               <div class="tab2">
                 <h2>Git</h2>
                 <table class="table">
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Git Features</th>
+                      <th>Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Git push</th>
+                      <td>Git push pushes all changes from your local machine to the git repository</td>
+                    </tr>
+                    <tr>
+                      <th>Git pull</th>
+                      <td>Git pull pulls all changes made from the git repository to yout local machine</td>
+                    </tr>
+                    <tr>
+                      <th>Git add .</th>
+                      <td>Git add . (Adds files to repository)</td>
+                    </tr>
+                    <tr>
+                      <th>Git commit -m ""</th>
+                      <td>Git commit -m <i>"any message"</i> records any changes in the repository </td>
+                    </tr>
                   <tr>
-                    <th>git push puts things into a linked repository</th>
-                    <th>Git pull pulls things from a linked repository if changes has been made</th>
-                    <th>Git used in CMD</th>
+                    <th>Git init -b main</th>
+                    <td>This creates a repositroy in the folder this command is ran in through the CLI</td>
                   </tr>
-                  <tr>
-                    <td>git add . adds new files</td>
-                    <td>git commit -m "" commits any changed or updated files</td>
-                    <td>git init -b main creates new repository</td>
-                  </tr>
-                  <tr>
-                    <td>git remote add origin sets new remote</td>
-                    <td> git remote -v verifies</td>
-                    <td> git is the main thing used</td>
-                  </tr>
-          </table>
+                  </tbody>
+                  </table>
+
         </div>
       </div>
 
@@ -267,37 +394,92 @@
               <div class="tab2">
                 <h2>GO</h2>
                 <table class="table">
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>GO Features</th>
+                      <th>Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>If/Else statements</th>
+                      <td> <strong>IF/Else</strong> statements are conditional. <strong>IF</strong> means it will 
+                        execute a piece of code if a certain condition is met e.g true.
+                        and <strong>Else</strong> would be executed if that condtion isnt met.
+                        <img src="images/if-else-golang.png" alt="IF/ELSE GO CODE">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Declaring a Variable</th>
+                      <td>Declaring a variable in go requires you to
+                        declare that something is going to be a variable <strong>VAR</strong>
+                        Declare a Name for the variable <strong>INPUT</strong>
+                        Then finally declare the type the variable is going to be <strong>STRING</strong>
+                        <img src="images/varinput.PNG" alt="Declarin a variable">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Short assignement operator</th>
+                      <td>Delcaring a variable can also be done in a shorter way
+                        by using <strong>":=" </strong>When using this all that is needed is a name and a value
+                      and this operator will auto assign to the type of the value
+                    e.g <strong>"a:=1"</strong> would make <strong>"a"</strong> an interger.
+                    <br>
+                  <img src="images/shortoperator.PNG" alt="short operator">
+                 </td>
+                    </tr>
+                    <tr>
+                      <th>Functions</th>
+                      <td>Functions store specific code which execute a certain task. Functions can be used to 
+                        call code saving the time of writing it again. Functions include <strong>parameteres</strong> which can have
+                        values assigned to them. Functions can also include <strong> return types</strong>
+                        which tells what data type the value returned should be.
+                         Function is delcared by <strong>FUNC</strong> then followed by <strong> Nameoffunction(parameters string) return type </strong>
+                         <img src="images/function.PNG" alt="function">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th> For Loops</th>
+                      <td> A for loop is code that repeats itself [loops] untill 
+                        a certain condition is met such as true. For an example, a for loop
+                        can be  a series of <strong> If/esle </strong> statements and like them it has a true and false
+                        a for loop will make the<strong> If/esle </strong>statment keep repeating until the condition met is true. 
+                        A foor loop can also made without using <strong> If/esle </strong> for an example when a loop is used to count up to a certain number.
+                        <img src="images/forloopnoif.PNG" alt="for loop no if">
+                        <img src="images/validinput.PNG" alt="Valid input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Running go</th>
+                      <td>Running go can be done in two ways. <strong>"Go run ."</strong> can be entered to 
+                      run Go code thats location is currenntly open in the <strong>CLI</strong>. <strong>Go run filename.go</strong> can also be used to
+                    run go aswell.
+                    <img src="images/cli.PNG" alt="go run">
+                    <video autoplay muted loop>
+                    <source src="images/IMG_7003.MP4" alt="go run . video">
+                    </video>
+                  </td>
                   <tr>
-                    <th>Var glue string [sets glue variable as a string]</th>
-                    <th>glue:= can also be used works as a short way to assign the glue variable to a type</th>
-                    <th>If/Else statements is code that will run if a certain conidtion is met such as true/false</th>
+                    <th>Go mod init</th>
+                    <td>Go mod init is used to create a go.mod file which keeps track of all the dependecnies (building blocks of other code)
+                      that are needed to make the program run. For an example, in your program if you are printing text to the screen
+                      go.mod tells go that you need to print. Go will then get the right version of the code you need. It helps go find the right 
+                      code you need so you save time.    
+                    </td>
                   </tr>
                   <tr>
-                    <td>if name = "joe"
-                       print ("Thats my name")
-                     Else 
-                     print ("Thats not my name")
+                    <th>Why doe we automate testing?</th>
+                    <td> Testing code is great because it helps to make sure your code works without any erorrs
+                      It also helps to prevent errors of occuring in the future if regular testing is carried out.
+                      Automating testing of code Is also quicker as each piece of code dosen't have to be etsted individually
+                      it is also more effective as it helps to spot errors quikcer and some you may not notice.
+                    </td>
+                  </tr>
+                    </tr>
 
-                    </td>
-                    <td>A for loop is where code is repeated x ammount of times automtically until certain criteria is met. e.g finish loop</td>
-                    <td>this loop will print numbers up to 4
-                      for i:= 1; i==5; i++
-                      print i
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Function is code that is designed to perform a specific task. [putting code in different groups]
-                      a paramater is a value that a function can use to carry out specific code
-                      return type is the type of whatver the function returns. For an example if the function returns a number then the return type would be an interger.
-                    </td>
-                    <td>go mod init is used to creare a go module  [go.mod] allows you to use other GO commands. To run go can use go run . 
-                      can also use go run filename </td>
-                    <td> We automate testing of code because it is quicker which saves time, more effective and efficient </td>
-            
-            
-                    </div>
-                  </tr>
-          </table>
+                  </tbody>
+                  </table>
         </div>
       </div>
 
