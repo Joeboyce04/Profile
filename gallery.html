@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="include.js"></script>
+    <script src="gallery.js"></script>
+    <link rel="stylesheet" href="slider.css">
+  </head>
+
+  <body>
+    <div class="topheader">
+      <div class="header">
+        <div id="navbar"></div>
+
+        <div class="slider-container">
+          <!-- slider  -->
+          <div class="slider">
+            <!-- slide 1 -->
+            <div class="slide">
+              <img src="images/images (1).jfif" alt="" />
+            </div>
+    
+            <!-- slide 2 -->
+            <div class="slide">
+              <img src="images/download.jfif" alt="" />
+            </div>
+    
+            <!-- slide 3 -->
+            <div class="slide">
+              <img src="images/BJSS LOGO.jfif" alt="" />
+            </div>
+    
+            <!-- slide 4 -->
+            <div class="slide">
+              <img src="images/sheamus.jfif" alt="" />
+            </div>
+    
+            <!-- Control buttons -->
+            <button class="slide-arrow btn-prev" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow btn-next" id="slide-arrow-next">
+              &#8250;
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+    <footer>
+      <div class="footer">
+        <p>"BJSS Academy is the best thing since sliced bread" - Dan Webb</p>
+      </div>
+    </footer>
+    <script>
+      insertHtmlIntoDiv('navbar.html', 'navbar', 'Gallery');
+      slider()
+    
+    </script>
+  </body>
+</html>

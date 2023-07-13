@@ -4,151 +4,22 @@
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
  <title> Cheat sheet</title>
-<style>
-  .footer {
-    position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: navy;
-        color: white;
-        text-align: center;
-        
-     height: 50px;
-     background-color: blue;
-     animation-name: foot;
-    animation-duration: 5s;
-    animation-iteration-count: 20;
-    }
-
-        @keyframes foot {  /*@Key framesmeans the animation will gradualy change from one style to another*/
-  from {background-color: blue;}
-  to {background-color: yellow;}
-    }
+<link rel="stylesheet" href="Cheatsheet.css">
+<script src="include.js"></script>
 
 
-
-
-  .header {
-    text-align: center;
-    padding: 30px 10px;
-
-
-
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-    
-
-
-  }
-
-  li {
-    float: left;
-
-
-  }
-
-  li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width: 100%;
-
-  }
-
-  table,th,td{
-    border: 2px solid; /* sets a solid line border */
-  }
-
-  .tabs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .tabs input[type="radio"] {
-    display: none;
-  }
-
-  .tabs label {
-    padding: 25px;
-    background: grey;
-    font-weight: bold;
-  }
-
-
-  .tabs .tab {
-    width: 100%;
-    padding: 20px;
-    order: 1;
-    display: none;
-  }
-
-
-
-  .tabs .tab1 {
-    background: black;
-  }
-
-
-  .tabs .tab h2 {
-    font-size: 3em;
-  }
-
-  .tabs input[type='radio']:checked+label+.tab {
-    display: block;
-    
-
-  }
-
-  .tabs input[type="radio"]:checked+label {
-    background: white;
-    
-  }
-
-  .txtcolour {
-    animation-name: txt;
-    animation-duration: 5s;
-    animation-iteration-count: 20;
-  }
-
-  @keyframes txt {
-    from {color: blue;}
-  to {color: yellow;}
-  }
-
-  
-
-
-  
-
-
-  
-</style>
 </head>
 
 <body>
   <div class="topheader">
     <div class=" header">
+      <div id="navbar">
+        
+      </div>
     
     
   
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a href="cheatsheet.html">Cheatsheet</a></li>
-      <li><a href="Mess.html">Mess</a></li>
-
-    </ul>
   </div>
 
     <div class="tabs"> 
@@ -490,7 +361,24 @@
                       it is also more effective as it helps to spot errors quikcer and some you may not notice.
                     </td>
                   </tr>
-                    </tr>
+                  <tbody></tbody>
+                </table>
+                    </div>
+            </div>
+                    
+      <input type="radio" id="tabheadfirst" name="tabs">
+      <label for="taheadfirst">Head first</label>
+      <div class="tab">
+        <div class="tab2">
+          <h2>Head first<h2>
+          <table class="table">
+            <table>
+              <thead>
+              <tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
 
                   </tbody>
                   </table>
@@ -514,6 +402,9 @@
         <p>"BJSS Academy is the best thing since sliced bread" - Dan Webb</p>
       </div>
       
+      <script>
+         insertHtmlIntoDiv("navbar.html", "navbar", "Cheatsheet");
+      </script>
 </body>
 
 </html>

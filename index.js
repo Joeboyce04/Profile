@@ -1,0 +1,1 @@
+function inserthtmlintodiv('navbar.html','navbar','home');

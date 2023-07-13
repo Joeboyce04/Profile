@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    </style>
+  </head>
+  <body>
+    <div id="gameDiv">
+      <h1 class="gameText" id="playerText">Player:</h1>
+      <h1 class="gameText" id="computerText">Computer:</h1>
+      <h1 class="gameText" id="resultText">Result:</h1>
+
+      <button class="choiceBtn">ROCK</button>
+      <button class="choiceBtn">PAPER</button>
+      <button class="choiceBtn">SCISSORS</button>
+    </div>
+
+    <div class="footer">
+
+        <p>"BJSS Academy is the best thing since sliced bread" - Dan Webb</p>
+
+    </div>
+
+    <script>
+      const playerText = document.querySelector("#playerText");
+      const computerText = document.querySelector("#computerText");
+      const resultText = document.querySelector("#resultText");
+      const choiceBtns = document.querySelectorAll(".choiceBtn");
+      let playerchoice;
+      let computerchoice;
+      let result;
+
+      choiceBtns.forEach((button) =>
+        button.addEventListener("click", () => {
+          playerchoice = button.textContent;
+          computerTurn();
+          playerText.textContent = `Player: ${playerchoice}`;
+          computerText.textContent = `Computer: ${computerchoice}`;
+          resultText.textContent = checkWinner();
+        })
+      );
+
+      function computerTurn() {
+        const randNum = Math.floor(Math.random() * 3) + 1;
+
+        switch (randNum) {
+          case 1:
+            computerchoice = "ROCK";
+            break;
+          case 2:
+            computerchoice = "PAPER";
+            break;
+          case 3:
+            computerchoice = "SCISSORS";
+            break;
+        }
+      }
+      function checkWinner() {
+        if (playerchoice == computerchoice) {
+          return "Draw!";
+        } else if (computerchoice == "ROCK") {
+          return playerchoice == "PAPER" ? "You Win!" : "You Lose!";
+        } else if (computerchoice == "PAPER") {
+          return playerchoice == "SCISSORS" ? "You Win!" : "You Lose!";
+        } else if (computerchoice == "SCISSORS") {
+          return playerchoice == "ROCK" ? "You Win!" : "You Lose!";
+        }
+      }
+    </script>
+  </body>
+</html>

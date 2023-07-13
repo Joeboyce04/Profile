@@ -1,0 +1,42 @@
+.choiceBtn {
+  all: unset;
+  cursor: pointer; /* cursour appearence */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* transfrom, rotate,scale,move */
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+  text-align: center;
+
+  height: 50px;
+  background-color: blue;
+  animation-name: foot;
+  animation-duration: 5s;
+  animation-iteration-count: 20;
+}
+
+@keyframes foot {
+  /*@Key framesmeans the animation will gradualy change from one style to another*/
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: yellow;
+  }
+}

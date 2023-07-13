@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css"
+    />
+    <link rel="stylesheet" href="slider.css">
+    <script src="gallery.js"></script>
+    <script src="include.js"></script>
+  </head>
+  <body>
+    <div class="topheader">
+        <div class="header">
+    <div id="navbar"></div>
+    <div>
+        <div id="gametext">
+            <h1 class="gameText" id="playerText">Player:</h1>
+            <h1 class="gameText" id="computerText">Computer:</h1>
+            <h1 class="gameText" id="resultText">Result:</h1>
+           
+        <div class="slider-container">
+           
+            <div class="slider">
+        
+              <div class="slide" >
+                <button class="choiceBtn"><img src="images/the-rock-a-435-260989da05cc4aabb28912a1622bcdef.jpg" alt=""/>ROCK</button>
+              </div>
+      
+              
+              <div class="slide" >  
+                <button class="choiceBtn"><img  src="images/GettyImages-1128879610-c-fbbc77f.jpg" alt=""/>PAPER</button>
+              </div>
+      
+          
+              <div class="slide" >
+                <button class="choiceBtn"><img   src="images/download (1).jfif" alt="" />SCISSORS</button>
+              </div>
+      
+             
+              <div class="slide" >
+                <button class="choiceBtn"> <img   src="images/spock.jfif" alt="" />SPOCK</button>
+              </div> 
+             
+              </div>
+      
+           
+              <button class="slide-arrow btn-prev" id="slide-arrow-prev">
+                &#8249;
+              </button>
+              <button class="slide-arrow btn-next" id="slide-arrow-next">
+                &#8250;
+              </button>
+
+              
+    <script>
+      insertHtmlIntoDiv("navbar.html", "navbar", "Rock,Paper,Scissors");
+      slider()
+       
+    </script>
+    <script src="rps.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.jt {
+  font-size: 1em;
+  text-align: center;
+}
+
+.skill {
+  color: white;
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+  text-align: center;
+
+  height: 50px;
+  background-color: blue;
+  animation-name: foot;
+  animation-duration: 5s;
+  animation-iteration-count: 20;
+}
+
+@keyframes foot {
+  /*@Key framesmeans the animation will gradualy change from one style to another*/
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.g {
+  color: aliceblue;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.no {
+  float: none;
+}
+
+.erm {
+  float: right;
+  border-radius: 0%;
+  height: 130px;
+  width: 130px;
+}
