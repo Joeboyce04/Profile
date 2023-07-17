@@ -153,7 +153,6 @@
                 <td>echo (anything put here goes into the file)> filename</td>
               </tr>
               <tr>
-                <th>Delete a File</th>
                 <td>del filename</td>
               </tr>
               <tr>
@@ -180,7 +179,8 @@
               </tr>
             </tbody>
             </table>
-        </div>
+        </div>         
+      
       </div>
 
       <input type="radio" id="tabbatch" name="tabs">
@@ -273,6 +273,7 @@
 
         </div>
       </div>
+    
 
       <input type="radio" id="tabgo" name="tabs">
             <label for="tabgo">GO</label>
@@ -311,7 +312,7 @@
                       <td>Declaring and assigning a variable can also be done in a shorter way
                         by using <strong>":=" </strong>When using this all that is needed is a name and a value
                       and this operator will auto assign to the type of the value
-                    e.g <strong>"a:=1"</strong> would make <strong>"a"</strong> an interger.
+                    e.g <strong>"a:=1"</strong> would make <strong>"a"</strong> an integer.
                     <br>
                   <img src="images/shortoperator.PNG" alt="short operator">
                  </td>
@@ -322,16 +323,16 @@
                         call code saving the time of writing it again. Functions include <strong>parameters</strong> which can have
                         values assigned to them. Functions can also include <strong> return types</strong>
                         which tells what data type the value returned should be.
-                         Function is delcared by <strong>FUNC</strong> then followed by <strong> Nameoffunction(parameters string) return type </strong>
+                         Function is declared by <strong>FUNC</strong> then followed by <strong> Nameoffunction(parameters string) return type </strong>
                          <img src="images/function.PNG" alt="function">
                       </td>
                     </tr>
                     <tr>
                       <th> For Loops</th>
-                      <td> A for loop is code that repeats itself [loops] untill 
+                      <td> A for loop is code that repeats itself [loops] until 
                         a certain condition is met such as true. For an example, a for loop
                         can be  a series of <strong> If/else </strong> statements and like them it has a true and false
-                        a for loop will make the<strong> If/else </strong>statment keep repeating until the condition met is true. 
+                        a for loop will make the<strong> If/else </strong>statement keep repeating until the condition met is true. 
                         A foor loop can also made without using <strong> If/else </strong> for an example when a loop is used to count up to a certain number.
                         <img src="images/forloopnoif.PNG" alt="for loop no if">
                         <img src="images/validinput.PNG" alt="Valid input">
@@ -340,7 +341,7 @@
                     <tr>
                       <th>Running go</th>
                       <td>Running go can be done in two ways. <strong>"Go run ."</strong> can be entered to 
-                      run Go code thats location is currenntly open in the <strong>CLI</strong>. <strong>Go run filename.go</strong> can also be used to
+                      run Go code thats location is currently open in the <strong>CLI</strong>. <strong>Go run filename.go</strong> can also be used to
                     run go as well.
                     <img src="images/cli.PNG" alt="go run">
                     <video autoplay muted loop>
@@ -355,31 +356,108 @@
                   </tr>
                   <tr>
                     <th>Why doe we automate testing?</th>
-                    <td> Testing code is great because it helps to make sure your code works without any erorrs
-                      It also helps to prevent errors of occuring in the future if regular testing is carried out.
-                      Automating testing of code Is also quicker as each piece of code dosen't have to be etsted individually
-                      it is also more effective as it helps to spot errors quikcer and some you may not notice.
+                    <td> Testing code is great because it helps to make sure your code works without any errors
+                      It also helps to prevent errors of happening in the future if regular testing is carried out.
+                      Automating testing of code Is also quicker as each piece of code doesn't have to be tested individually
+                      it is also more effective as it helps to spot errors quicker and some you may not notice.
                     </td>
                   </tr>
-                  <tbody></tbody>
+                  </tbody>
                 </table>
                     </div>
             </div>
                     
-      <input type="radio" id="tabheadfirst" name="tabs">
-      <label for="taheadfirst">Head first</label>
+      <input type="radio" id="tabjavascript" name="tabs">
+      <label for="tabjavascript">Java Script</label>
       <div class="tab">
         <div class="tab2">
-          <h2>Head first<h2>
+          <h2>Java Script</h2>
           <table class="table">
             <table>
               <thead>
-              <tr>
                 <tr>
-                  <th></th>
-                  <td></td>
+                  <th>Java Script</th>
+                  <th>Explanation</th>
                 </tr>
-
+              </thead>
+              <tbody>
+              <tr>
+                  <th>Java Script Scripting</th>
+                  <td>JS Scripting is where you put JS under the <strong>"Script"</strong> tag which should be at the <strong>"End"</strong> of the HTML page. This is 
+                    because JS is a programming language and should load last once everything else has loaded in so everything works well.
+                    This allows you to add JS to your HTML which allows for more functionality and interactivity of web pages instead of them being static. 
+                    <strong>Java Script</strong>code should be included in a separate JS file similarly to CSS. 
+                  <image src="images/js exm.PNG" alt="jsscript"></image></td></td>
+                </tr>
+                <tr>
+                  <th> JS Variables  </th>
+                  <td>var - var should be used when the variable or type can change and if you must support old browsers
+                    <br>
+                    <br>
+                    let - let should be used when the variable or type can change
+                    <br>
+                    <br>
+                    const - Always use const when the type or value shouldnt be changed
+                    <br>
+                    <br>
+                    <image src="images/variablesjs.PNG" alt="jsvar"></image>
+                  </td>
+                </tr>
+                <tr>
+                <th>Displaying to the console</th>
+                <td>console.log- writes to the console
+                  <br>
+                  <br>
+                  return- stops the execution of a function and returns a value
+                  <br>
+                  <br>
+                  <image src="images/consolelog.PNG" alt="jsreturn"></image>
+                </td>
+              </tr>
+              <tr>
+                <th>JS operators</th>
+                <td> <image src="images/operatorsjs.PNG" alt="jsoperators"></image></td>
+              </tr>
+              <tr>
+                <th>IF/Else statements</th>
+                <td>Similar to the <strong>GO</strong> page this is how IF/ELSE statements works
+                <image src="images/jsifelse.PNG" alt="jsifelse"></image></td>
+              </tr>
+              <tr>
+                <th>For/While Loop</th>
+                <td> Similar to <strong>GO</strong> page this is how FOR/WHILE loops work
+                  <image src="images/jsforloop.PNG" alt="jsforloop"></image>
+                  <br>
+                  <br>
+                  WHILE:
+                  <image src="images/jswhileloop.PNG" alt="jswhileloop"></image>
+                </td>
+              </tr>
+              <tr>
+                <th>Functions</th>
+                <td>Similar to the <strong>GO</strong> page functions can store specific code. In HTML a function can be called from an external
+                JS file by calling the function and its parameters in the <strong>SCRIPT</strong> tag. Bleow is a JS function and an example of it in HTML
+                <image src="images/jsfunction.PNG" alt="jsfunction"></image>
+                <br>
+                HTML:
+                <image src="images/jsfunctionhtml.PNG" alt="jsfunctioninhtml"></image> </td>
+              </tr>
+              <tr>
+                <th>Array</th>
+                <td>An Array is a collection or a list of data stored. Used to store multiple pieces of data of the same type together. To create an array <strong>var myArray=[];</strong>
+                  <image src="images/jsarray.PNG" alt="jsarray"></image>
+                  This is an example on how to call from an array
+                  <image src="images/jsarraycall.PNG" alt="jsarraycall"></image>
+                </td>
+              </tr>
+              <tr>
+                <th>Object</th>
+                <td>An object  is like a car, a car has properties like weight, color and methods like start and stop. An object can contain
+                  many values like a car has many properties.
+                  <br>
+                  <image src="images/jsobject.PNG" alt="jsobject"></image>
+                </td>
+              </tr>
                   </tbody>
                   </table>
         </div>
@@ -387,6 +465,360 @@
 
 
 
+
+      <input type="radio" id="tabheadfirst" name="tabs">
+      <label for="tabheadfirst">Head First JS</label>
+      <div class="tab">
+        <div class="tab2">
+          <h2>Head First JS</h2>
+          <table class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Head First JS</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th>Chapter One</th>
+                <td>
+                  -Java script adds behaviour to web pages
+                  <br>
+                  <br>
+                  - Browsers begin executing JS code as soon as they encounter so put js code at the <strong>bottom</strong> of the page
+                  <br>
+                  <br>
+                  -Add javascript in script tag
+                  <br>
+                  <br>
+                  - Can put JS in separate File
+                  <br>
+                  <br>
+                  - Integer, String and Boolean  number,letter,true or false
+                  <br>
+                  <br>
+                  -IF/ELSE allow for you to make decisions in your code
+                  <br>
+                  <br>
+                  -WHILE/FOR statements allow you to execute  code many times by looping
+                </td>
+              </tr>
+              <tr>
+                <th>Chapter Two</th>
+                <td>
+                  - Use Pseudocode to sketch out program before you begin coding
+                  <br>
+                  <br>
+                  -Two kinds of boolean operators <strong>Comparison</strong> and <strong>Logical</strong>
+                  <br>
+                  <br>
+                  -<strong>Comparison</strong> operators compare two values and results in true or false for an example less than or greater than
+                  <br>
+                  <br>
+                  -<strong>Logical</strong> operators combine two boolean Values
+                  <br>
+                  <br>
+                  - Math.random will generate a random number between 0 and 1 but not including 1 (case sensitive)
+                  <br>
+                  <br>
+                  -Math.floor function rounds down a decimal number to the nearest integer (case sensitive)
+                  <br>
+                  <br>
+                  -The <strong>Prompt</strong> function shows a dialog with message and space for the user to enter a value
+                </td>
+              </tr>
+              <tr>
+                <th>Chapter 3</th>
+                <td>
+                  - To declare a function use the <strong>function</strong> key word
+                  <br>
+                  <br>
+                  -Use parentheses to enclose any parameters, and curly braces to enclose the body of a function
+                  <br>
+                  <br>
+                  -You can call a function by using its name and passing arguments to the functions parameters (if any)
+                  <br>
+                  <br>
+                  -A function can optionally return a value using the <strong>return</strong> statement
+                  <br>
+                  <br>
+                  -A function creates a local scope for parameters and any local variables the function uses
+                  <br>
+                  <br>
+                  - Variables are either global or local meaning they are either visible everywhere or visible only in the function
+                  <br>
+                  <br>
+                  -Declare local variables  at the top of the body of your function
+                  <br>
+                  <br>
+                  -If you forget to declare a local variable using var, that variable will be global which could cause errors
+                  <br>
+                  <br>
+                  -Functions help organize code and create reuseable chunks of code
+                  <br>
+                  <br>
+                  -can customize code in a function by passing arguments to parameters use different arguments to get different results
+                  <br>
+                  <br>
+                  -Can use built in js functions like alert,prompt and Math.random to do work in your programmes
+                  <br>
+                  <br>
+                  -organize code so functions are together and global variables
+                </td>
+              </tr>
+              <tr>
+                <th>Chapter 4</th>
+                <td>
+                  -Arrays are a data structure for ordered data
+                  <br>
+                  <br>
+                  - Arrays use a zero based index so the first item is at position 0
+                  <br>
+                  <br>
+                  - All arrays have a length property which holds a number representing the number of items in the array
+                  <br>
+                  <br>
+                  -You can access any item using its index. For an example, use myArray[1] to access item one which will be the second item because its a zero based index
+                  <br>
+                  <br>
+                  -If an item does not exist trying to access it will result in a value of undefined
+                  <br>
+                  <br>
+                  -Assigning a value to an existing item will change its value
+                  <br>
+                  <br>
+                  -Assigning a value to an item that does not exist on the array will create a new item in the array
+                  <br>
+                  <br>
+                  -you can use a value of any type for an array item
+                  <br>
+                  <br>
+                  -Not all the values in array need to be the same type
+                  <br>
+                  <br>
+                  -creating an array <strong>var myArray=[];</strong>
+                  <br>
+                  <br>
+                  -<strong>For loop</strong> is commonly used to itterate through Arrays
+                  <br>
+                  <br>
+                  -The <strong>While loop</strong> is most often used when you don't know how many times you need to loop and your looping until a condition is met.
+                  whereas a <strong>For loop</strong> is used when you know the number of times you need to loop.
+                  <br>
+                  <br>
+                  -you can increment a variable by one with the post-increment operator <strong>++</strong> and
+                  this can be done to decrement <strong>--</strong>
+                  <br>
+                  <br>
+                  -You can add a new value to an array using <strong>Push</strong>
+                </td>
+              </tr>
+              <tr>
+                <th>Chapter 5</th>
+                <td>
+                  -An object is a collection of properties, Like a car has different properties about it such as colour,make,size
+                  <br>
+                  <br>
+                  -To access a property; use <strong>dot notation:</strong> the name of the variable containing the object, then a period, then the name of the property
+                  <br>
+                  <br>
+                  -You can add new properties to an object at any time, by assigning a value to a new property Name
+                  <br>
+                  <br>
+                  - You can also delete properties from objects using the <strong>delete</strong> operator
+                  <br>
+                  <br>
+                  -Unlike variables that contain primitive values, like strings, numbers and booleans a variable cant actually contain an object instead, it contains a reference to an object, we say that objects are <strong>"refernce variables"</strong>
+                  <br>
+                  <br>
+                  -When you pass an object to a function the function gets a copy of the reference to the object, not a copy of the object itself so if you change the value of one of the objects properties it changes the value in the original object. 
+                  <br>
+                  <br>
+                  -Object properties can contain functions. When a function is in an object we call it a <strong>Method</strong>
+                  <br>
+                  <br>
+                  -You can call a method by using the <strong>Dot notation</strong>: the object name, a period and the property name of the method followed by parentheses
+                  <br>
+                  <br>
+                  -A method is just like a function except that it is in an object 
+                  <br>
+                  <br>
+                  -You can pass arguments to methods just like regular functions
+                  <br>
+                  <br>
+                  -When you call an objects method, the keyword <strong>this</strong> refers to the object whose method you are calling.
+                  <br>
+                  <br>
+                  -To access an objects properties in an objects method, you must use dot notation with <strong>this</strong> in place of the objects name.
+                  <br>
+                  <br>
+                  -in object-oriented programming, we think in terms of objects rather than procedures
+                </td>
+              </tr>
+              <tr>
+                <th>Chapter 6</th>
+                <td>
+                  - The Document Object Model or DOM is the browsers internal representation of your web pages
+                  <br>
+                  <br>
+                  -The browser creates the DOM for your page as it loads and parses the HTML
+                  <br>
+                  <br>
+                  -You get access to the DOM in your JavaScript code with the Document object 
+                  <br>
+                  <br>
+                  -The document object has properties and methods you can use to access and modify the DOM
+                  <br>
+                  <br>
+                  -The <strong>document.getElementById</strong> method grabs an element from the DOM using its <strong>ID</strong>
+                  <br>
+                  <br>
+                  - The document.getElementById method returns an <strong>element object</strong> that represents an element in your pages
+                  <br>
+                  <br>
+                  - An element object has properties and methods you can use to read an elements content and change it
+                  <br>
+                  <br>
+                  -The <strong>innerHTML</strong> property holds the text content, as well as all nested HTML content of an element
+                  <br>
+                  <br>
+                  -You can modify the content of an element by changing the value of its innerHTML property
+                  <br>
+                  <br>
+                  -When you modify an element by changing its innerHTML property, you see the change in your web page immediately
+                  <br>
+                  <br>
+                  -You can get the value of an elements attributes using the <strong>getAttribute method</strong>
+                  <br>
+                  <br>
+                  -You can set the value of an elements attributes using the <strong>setAttribute</strong> method
+                  <br>
+                  <br>
+                  -If you put your code in a <strong>script</strong> element in the <strong>head</strong> of the page you need to make sure you don't try to modify the DOM until the page has fully loaded
+                  <br>
+                  <br>
+                  -You can use the window objects <strong>onload</strong> property to set an <strong>event handler</strong> or call-back, function for the load event
+                  <br>
+                  <br>
+                  -The event handler for the windows onload property will be called as soon as the page is fully loaded
+                  <br>
+                  <br>
+                  -There are many different kinds of events we can handle in JavaScript with event handler functions
+                </td>
+                 </tr>
+                 <tr>
+                  <th>Chapter 7</th>
+                  <td>
+                    -there are two groups of types in javascript: <strong>Primitives</strong> and <strong>Objects</strong>. Any value that isn't a primitive type is an <string>object</string>
+                    <br>
+                    <br>
+                    -The primitives are: numbers,strings,booleans, null and undefined. Everything else is an object 
+                    <br>
+                    <br>
+                    -<strong>Undefined</strong> means that a variable (or property or array item) hasn't yet been initialized to a value
+                    <br>
+                    <br>
+                    -<strong>null</strong> means "no object"
+                    <br>
+                    <br>
+                    -<strong>NaN</strong> stands for "Not a Number", although a better way to think of <strong>NaN</strong> is as a number that can't be represented in JavaScript.The type of Nan is number.
+                    <br>
+                    <br>
+                    -Nan never equals any other value, including itself, so to test for NaN use the function <strong>isNaN</strong>
+                    <br>
+                    <br>
+                    -Test two values for equality using <strong> ==</strong>or<strong>===</strong>
+                    <br>
+                    <br>
+                    -If two operands have different types, the equality operator (==) will try to convert one of the operands into another type before testing for equality.
+                    <br>
+                    <br>
+                    -If two operands have different types, the strict equality operator (===) returns false.
+                    <br>
+                    <br>
+                    -You can use === if you want to be sure no type conversion happens, however sometimes the type conversion of == can come in handy
+                    <br>
+                    <br>
+                    -Type conversion is also used with other operators, like arithmetic operators and string concatenation
+                    <br>
+                    <br>
+                    -JavaScript has five <strong>falsey</strong> values: undefined, num,0,"" (the empty string) and NaN. (False is also falsey). All other values are <strong>truthy</strong>
+                    <br>
+                    <br>
+                    -Strings sometimes behave like objects. If you use a property or method on a primitive string, JavaScript will convert the string to an object temporarily, use the property
+                    and then convert it back to a primitive string. This happens behind the scenes so you don't have to think about it.
+                    <br>
+                    <br>
+                     -The string has many methods that are useful for string manipulation
+                     <br>
+                     <br>
+                     -Two objects are equal only if the variables containing the object references point to the same object.
+                  </td>
+                 </tr>
+                 <tr>
+                  <th>Chapter 8, Battleship</th>
+                  <td>
+                    -We use HTML to build the structure of the Battleship game, CSS to style it and JavaScript to create the behavior
+                    <br>
+                    <br>
+                    - The id of each element in the table is used to update the image of the element to indicate a HIT or MISS
+                    <br>
+                    <br>
+                    - The form uses an input with type button we attach an <strong>event handler</strong> to the button so we can know in the code when a player has entered a guess
+                    <br>
+                    <br>
+                    -To get a value from a form input text element use the elements value property
+                    <br>
+                    <br>
+                    - CSS positioning can be used to position elements precisely in a web page
+                    <br>
+                    <br>
+                    - We organized the code using three objects: a model, a view and a controller
+                    <br>
+                    <br>
+                    -Each object in the game has one primary responsibility
+                    <br>
+                    <br>
+                    -The responsibility of the model is to store the state of the game and implement logic that modifies that state
+                    <br>
+                    <br>
+                    -The responsibility of the controller is to glue the game together, to make sure the players guess is sent to the model to update the state in the model changes.
+                    <br>
+                    <br>
+                    -The responsibility of the controller is to glue the game together, to make sure the players guess is sent to the model to update the state, and to check to see when the game is complete
+                    <br>
+                    <br>
+                    -By designing the game with objects that each have a seperate responsibility, we can build and test each part of the game independently 
+                    <br>
+                    <br>
+                    - To make it easier to create and test the model we intitially hardcoded tje locations of the ships after ensuring the model was working we replaced these hardcoded locations with random locations generated by code
+                    <br>
+                    <br>
+                    - We used properties in the model, like NumShips and shiplength so we dont hardcode values in the methods  that we might want to change later
+                    <br>
+                    <br>
+                    - Arrays have an IndexOf method that is simillar to the string IndexOfMethod the array indexof method takes a value and returns the index of that value if it exists in the array or 01 if it does not exist.
+                    <br>
+                    <br>
+                    - With chaining you can string together object references using the dot operator thus combining statements and eliminating temporary variables
+                    <br>
+                    <br>
+                    -The do while loop is similar to the while loop except that the condition is checked after the statements in the body of the loop have executed once.
+                    <br>
+                    <br>
+                    -Quality assurance is an important part of developing your cod. QA requires testing not just valid input but invalid input as well
+
+                  </td>
+                 </tr>
+                 <tr>
+                  <th>Chapter 9</th>
+                  <td></td>
+                 </tr>
+            </tbody>
+          </table>
+</div>
+</div>
 
 
 

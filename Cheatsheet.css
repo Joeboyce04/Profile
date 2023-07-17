@@ -88,10 +88,12 @@ td {
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
+  /*displays table when cliked*/
   display: block;
 }
 
 .tabs input[type="radio"]:checked + label {
+  /* makes it so when a tab is clicked the background is white*/
   background: white;
 }
 
