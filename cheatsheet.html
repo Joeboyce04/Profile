@@ -808,12 +808,48 @@
                     <br>
                     <br>
                     -Quality assurance is an important part of developing your cod. QA requires testing not just valid input but invalid input as well
-
                   </td>
                  </tr>
                  <tr>
                   <th>Chapter 9</th>
-                  <td></td>
+                  <td>
+                    -Most JavaScript code is written to react to <strong>events</strong>
+                    <br>
+                    <br>
+                    -There are many different kinds of events your code can react to
+                    <br>
+                    <br>
+                    -To react to an event you write an <strong>event handler</strong> function and register it. For instance to register a handler for the click event
+                    you assign the handler function to the onclick property of an element
+                    <br>
+                    <br>
+                    -You're not required to handle any specific event. You choose to handle the events you're interested in.
+                    <br>
+                    <br>
+                    -Functions are used for handlers because functions allow us to package up code to be executed later
+                    <br>
+                    <br>
+                    -Code written to handle events is different from code that executes top to bottom and then completes. Event handlers can run at any time and in any order: they are asynchronous
+                    <br>
+                    <br>
+                    - Events that occur on elements in the DOM cause an event object to be passed to the event handler
+                    <br>
+                    <br>
+                    -The event object contains properties with extra information about the event, including the type like click or load and the target (the object on which the event occurred)
+                    <br>
+                    <br>
+                    -Many events can happen very close together. When too many events happen for the browser to handle them as they occur, the events are stored in an event queue 
+                    (in the order in which they occurred) so the browser can execute the event handlers for each event in turn.
+                    <br>
+                    <br>
+                    -If an event handler is computationally complex it will slow down the handling of the events in the queue because only one event handler can execute at a time
+                    <br>
+                    <br>
+                    -The functions setTimeout and setInterval are used to generate time-based events after a certain time has passed
+                    <br>
+                    <br>
+                    -The method getElementsByTagName returns zero, one or more element objects in a NodeList (which is array-like so you can iterate over it)
+                  </td>
                  </tr>
             </tbody>
           </table>
